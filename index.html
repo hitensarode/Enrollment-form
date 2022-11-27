@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Form.css" />
+  
+  <title>Enrollment Form</title>
+</head>
+
+<body class="bg-img">
+  <div>
+  <div class="navbar">
+  <nav>
+    <h1>Enrollment Form</h1>
+  </nav>
+</div >
+  <div class="box">
+    <div class="form-box">
+      <h2>Form</h2>
+      <div class="Form">
+
+
+
+        <div id="nameDiv" class="input">
+          <label >Name: </label>
+          <input autocomplete="none" id="name" type="text" placeholder="Enter Your Name..." />
+        </div>
+        <div id="fields" class="input">
+          <label >Email: </label>
+           <input id="email" autocomplete="none" type="text" placeholder="Enter Your Email Id" required />
+        </div>
+        <div id="fields" class="input age" >
+          <label >Age:  </label>
+          <input id="age" autocomplete="none" type="text" placeholder="Enter Age" />
+        </div>
+        <div id="fields" class="input city">
+          <label > City:</label>
+           <input id="city" autocomplete="none" type="text" placeholder="Enter City" />
+        </div>
+        <div id="fields" class="input">
+          <label >Phone: </label>
+           <input id="phone" type="text" autocomplete="cc-number" placeholder="Enter Phone No." />
+        </div>
+        <div id="fields" class="inputF">
+          <label >Gender:</label>
+          <input type="radio" id="M" name="gender" value="male"> 
+          <label for="M">Male</label>
+          <input type="radio" id="F" name="gender" value="female"> 
+          <label for="F">Female</label>
+          <input type="radio" id="O" name="gender" value="female"> 
+          <label for="O">Other</label>
+        </div>
+
+        <button id="entry">Submit</button>
+      </div>
+    </div>
+
+    <div class="table-box">
+      <div class="table">
+        <table id="display">
+          <h2>Enrolled Details</h2>
+          <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>Phone</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="Form.js"></script>
+</div>
+</body>
+
+</html>
